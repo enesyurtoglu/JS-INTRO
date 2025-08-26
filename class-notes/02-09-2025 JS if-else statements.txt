@@ -60,7 +60,7 @@ else {
   else console.log('Yay!');
 }
 
-FALSY: false, undefined, null, 0, '', NaN --> FUNZEN
+FALSY: false, undefined, null, 0, '', NaN 
 
 if(NaN) console.log('Hello');
 else console.log('Hi');
