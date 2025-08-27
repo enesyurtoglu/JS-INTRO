@@ -38,7 +38,7 @@ const arr = new Array();
 arr is the instance of the Array prototype
 Array is the blueprint/prototype 
 Array() is the constructor of the Array prototype 
-We use constructors with new keyword
+We use constructors with "new" keyword
 
 
 *** Interview Questions : mutable vs immutable
