@@ -6,3 +6,5 @@ console.log('I am 25 years old');
 console.log('I am 25 years old');
 console.log('option+command+down arrow duplicates the line');
 console.log('option+command+down arrow duplicates the line');
+
+console.log('merhaba semih')
