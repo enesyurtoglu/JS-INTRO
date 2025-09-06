@@ -50,6 +50,7 @@ const testAccount = {
 const testAccountCopy = {
   ...testAccount
 };
+console.log(typeof(testAccountCopy));
 
 testAccountCopy.fullname = 'Alex Smith';
 

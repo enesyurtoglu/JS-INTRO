@@ -8,6 +8,8 @@ while(randomNumber !== gameNumber) {
   randomNumber = getRandomNumber(1, 10); 
   attempts++;
 }
+console.log(randomNumber);
+console.log(attempts);
 
 // for( ; ; ) {
 //   let randomNumber = getRandomNumber(1, 10);
