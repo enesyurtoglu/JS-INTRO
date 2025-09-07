@@ -24,3 +24,9 @@ RETURN: returns the same array with modification
 STATIC or INSTANCE: instance
 DOES IT MODIFY ORIGINAL ARRAY: Yes
 */
+
+let str = 'javascript';
+
+let str2 = str.split('').reverse().join('');
+
+console.log(str2);

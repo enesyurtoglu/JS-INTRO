@@ -13,9 +13,9 @@ sort((a, b) => b - a);
 Functional Programming
 
 forEach(callback)
-map(callback)
-filter(callback)
-reduce(callback)
+map(callback).   --> returns a new array with the same size
+filter(callback) --> returns a new array
+reduce(callback) --> returns only one result/returns a single value e.g: counter number etc. min num, max num etc..
 some(callback)
 every(callback)
 find(callback)
@@ -23,4 +23,4 @@ findIndex(callback)
 
 
 filter: returns an array filtered with elements matching a condition (smaller size array)
-map: returns a same size array based on requirements
+map: returns a same size array based on requirements.  iterates all elements and returns a same size array
