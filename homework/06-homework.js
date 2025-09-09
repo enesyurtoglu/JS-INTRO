@@ -80,7 +80,8 @@ function hasVowels(str){
 console.log(hasVowels('JavaScript'));
 
 /*Task-4
-Write a function named checkAge() which takes a number argument to be considered as the yearOfBirth and returns a message below based on the given year.
+Write a function named checkAge() which takes a number argument to be considered as the yearOfBirth and 
+returns a message below based on the given year.
 
 If the age is less than 16, then print "AGE IS NOT ALLOWED”"
 If the age is 16 or more, then print "AGE IS ALLOWED"
@@ -94,15 +95,79 @@ checkAge(1920) -> "AGE IS ALLOWED"
 checkAge(1800) -> "AGE IS NOT VALID"
 */
 
+let date = new Date();
+let currentYear = date.getFullYear();
+let message = '';
 
+function checkAge(birth){
+    let currentAge = currentYear - birth;
+    if(currentAge >= 120 | birth > currentYear)
+    {
+        message = 'AGE IS NOT VALID';
+    }else if (currentAge >= 16 & birth < 120)
+    {
+        message = 'AGE IS ALLOWED';
+    }else
+    {
+        message = 'AGE IS NOT ALLOWED';
+    }
+    return message;
+}
+console.log(checkAge(1980));
 
+/*Task-5
+Write a function named averageOfEdges() which takes three number arguments and will 
+return average of min and max numbers​.
+Examples:
+averageOfEdges(0, 0, 0) 		-> 0
+averageOfEdges(0, 0, 6) 		-> 3
+averageOfEdges(-2, -2, 10) 	-> 4
+averageOfEdges(-3, 15, -3) 	-> 6
+averageOfEdges(10, 13, 20) 	-> 15
+*/
 
+// let averageNum;
+// function averageOfEdges(num1, num2, num3){
+//     const nums = [num1, num2, num3];
+//     let maxNum = num1;
+//     let minNum = num1;
+//     for(let i = 0; i < nums.length; i++){
+//         if(nums[i] > num1){
+//             maxNum = nums[i]
+//         }
+//     }
+//     for(let i = 0; i < nums.length; i++){
+//         if(nums[i] < num1){
+//             maxNum = nums[i]
+//         }
+//     }
 
+//     averageNum = (maxNum + minNum) / 2;
+//     return averageNum;
+// }
+// console.log(averageOfEdges(10, 3, 4));
 
+function averageOfEdges(num1, num2, num3){
+    const numbers = [5, 3, 4];
+    
+    let max = numbers.reduce((acc, curr) => curr > acc ? curr : acc, 0);
+    let min = numbers.reduce((acc, curr) => curr < acc ? curr : acc, 0);
+    
+    let averageNum = (max + min) / 2;
+    return averageNum;
+}
+console.log(averageOfEdges(5, 3, 4));
 
-
-
-
+function averageOfEdges(num1, num2, num3){
+    const numbers = [5, 3, 4];
+    
+    let max = Math.max(...numbers);
+    let min = Math.min(...numbers);
+    
+    let averageNum = (max + min) / 2;
+    return averageNum;
+}
+console.log(averageOfEdges(5, 3, 4));
 
 
 

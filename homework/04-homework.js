@@ -1,4 +1,4 @@
-const { getRandomNumber } = require('./../utils/MathHelper.js');
+const { getRandomNumber } = require('../utils/MathHelper.js');
 console.log(getRandomNumber(1,10));
 /*
 Task-1
@@ -61,7 +61,7 @@ And find the factorial of the number.
 Mathematically, the factorial of a non-negative integer n is defined as:
 n! = n × (n-1) × (n-2) × ... × 2 × 1
 */
-const { getRandomNumber } = require('./../utils/MathHelper.js');
+const { getRandomNumber } = require('../utils/MathHelper.js');
 
 let num1 = 1;
 let rand1 = getRandomNumber(1, 10);
@@ -79,7 +79,7 @@ Eventually, print the random number divisible by 5 with the number of attempts a
 Expected Output:The random number is {randomNumber} and it took {attempts} attempt/s to generate it.
 */
 
-const { getRandomNumber } = require('./../utils/MathHelper.js');
+const { getRandomNumber } = require('../utils/MathHelper.js');
 
 let gameNumber = 5;
 let attemptCount = 0;

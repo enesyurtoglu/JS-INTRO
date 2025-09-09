@@ -1,5 +1,6 @@
 const numbers = [ 3, 6, 10, 4 ];
-
+let max = numbers.reduce((acc, curr) => curr > acc ? curr : acc, -Infinity);
+console.log(max);
 // count even
 let countEven = numbers.reduce((evens, curr) => curr % 2 === 0 ? evens + 1 : evens, 0);
 
