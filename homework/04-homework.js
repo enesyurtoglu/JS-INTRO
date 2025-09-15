@@ -316,7 +316,7 @@ function firstDuplicate(arr){
     return -1;
 };
 
-const array = [ 123, 'abc', '123', 3, 'abc' ] ; 
+const array = [ 5, 7, 7, 0, 5, 10  ] ; 
 console.log(firstDuplicate(array));
 
 /*Task-16

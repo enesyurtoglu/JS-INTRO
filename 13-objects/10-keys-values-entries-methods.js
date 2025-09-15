@@ -6,7 +6,7 @@ const phone = {
 
 console.log(Object.keys(phone)); // [ 'brand', 'storage', 'color' ]
 console.log(Object.values(phone)); // [ 'iPhone', 64, 'Yellow' ]
-console.log(Object.entries(phone)); // [ [ 'brand', 'iPhone' ], [ 'storage', 64 ], [ 'color', 'Yellow' ] ]
+console.log(Object.entries(phone)); // [ [ 'brand', 'iPhone' ], [ 'storage', 64 ], [ 'color', 'Yellow' ] ] --> nested array 
 
 // keys: array of keys 
 // values: array of values
@@ -23,3 +23,10 @@ for(const value of Object.values(phone)) { // [ 'iPhone', 64, 'Yellow' ]
 for(const [ key, value ] of Object.entries(phone)) { // [ [ 'brand', 'iPhone' ], [ 'storage', 64 ], [ 'color', 'Yellow' ] ]
   console.log(`The entry key is '${key}' and the entry value is '${value}'.`);
 }
+
+for(const entry of Object.entries(phone)) { // [ [ 'brand', 'iPhone' ], [ 'storage', 64 ], [ 'color', 'Yellow' ] ]
+  console.log(`The entry key is '${entry[0]}' and the entry value is '${entry[1]}'.`);
+}
+
+
+

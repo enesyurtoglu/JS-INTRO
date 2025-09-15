@@ -13,7 +13,7 @@ for(const key in computer) {
 }
 
 console.log('\n------for..of loop--------\n')
-// for...of loop 
+// for...of loop : Cannot be used with objects. it is for arrays
 
 Object.keys(computer); // keys as an array 
 Object.values(computer); // values as an array
@@ -33,9 +33,9 @@ console.log('\n------entries--------\n')
 console.log(Object.entries(computer));
 
 for(const entry of Object.entries(computer)) {
-  console.log(entry); // entries keys one by one
-  console.log(entry[0]); // retrieves keys one by one
-  console.log(entry[1]); // retrieves values one by one
+  console.log(entry); // retrieves keys one by one as an array --> [ 'os', 'MacOS' ]
+  console.log(entry[0]); // retrieves keys one by one as the elements of the first inner array  --> os MacOS
+  console.log(entry[1]); // retrieves values one by one --> os MacOS color Black
 }
 
 
@@ -43,7 +43,7 @@ for(const [ k, v ] of Object.entries(computer)) {
   console.log(k, v);
 }
 
-// [ 'os', 'MacOS' ]
-// [ 'color', 'Black' ]
-// [ 'memory', '1 TB' ]
-// [ 'price', 999.99 ]
+// os MacOS
+// color Black
+// memory 1 TB
+// price 999.99

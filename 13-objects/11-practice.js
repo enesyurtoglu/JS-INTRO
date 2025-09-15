@@ -38,3 +38,4 @@ Print examScores -> { midterm: 60, final: 90 }
 Print first hobby -> Soccer
 Find and print average of exam scores -> 75
 */
+

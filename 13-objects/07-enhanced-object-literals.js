@@ -11,7 +11,7 @@ const sleep = true;
 // After ES6
 const cat = {
   name: 'Silver',
-  eat, // no need to include the value since it is already exists 
+  eat, // no need to include the value since it is already defined globally above 
   sleep
 };
 
@@ -28,3 +28,4 @@ const student1 = {
 };
 
 console.log(student1);
+

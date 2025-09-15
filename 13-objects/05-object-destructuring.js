@@ -26,9 +26,10 @@ console.log(password);
 console.log(email);
 console.log(DOB);
 
-//Aşağıdakiler direk JSON objectten çağırıyor. Yukarıdakiler isi sadece tek variable a indirgenmiş oluyor. 
+//Aşağıdakiler direk JSON objectten çağırıyor. Yukarıdakiler ise sadece tek variable a indirgenmiş oluyor. 
 console.log(account.username);
 console.log(account.password);
 console.log(account.email);
 console.log(account.DOB);
+
 
