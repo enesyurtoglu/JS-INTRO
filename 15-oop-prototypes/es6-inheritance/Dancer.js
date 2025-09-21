@@ -11,3 +11,4 @@ class Dancer extends Person {
 }
 
 module.exports = Dancer;
+

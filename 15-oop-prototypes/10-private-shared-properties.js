@@ -12,18 +12,18 @@ class Citizen {
     this.age = age;
   }
 
-  // getters and setters for private properties which provides in-direct access
-  getSSN(adminPassword) {
+  // getters and setters for private properties which provides in-direct access This is called ENCAPSULATION
+  getSSN(adminPassword) {// So this is a READ ONLY
     if(adminPassword === 'SecretPassword') return this.#SSN;
     throw new Error('You are not authorized!!!');
   }
 
-  setSSN(ssn) {
+  setSSN(ssn) {// So this is WRITE ONLY
     if(ssn.length === 9) this.#SSN = ssn;
     else throw new Error('The SSN is not correct!');
   }
 
-  getSecret() {
+  getSecret() { // So this is a READ ONLY since it is already provider in the class. No need for setter method
     return this.#secret;
   }
 }

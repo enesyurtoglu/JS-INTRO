@@ -363,26 +363,22 @@ reverseStringWords("I like JavaScript") 	-> "I ekil tpircSavaJ"
 reverseStringWords("Hello") 		-> "olleH"
 reverseStringWords("") 			-> ""
 reverseStringWords("    ") 		-> ""
+https://www.youtube.com/watch?v=a6s4OGZIJUc
 */
 
-let stry = "I like JavaScript"
-const reversedArray = []
-let reversedStr = '';
-
-   const words = stry.split(' ');
-   for(let i = 0; i <= words.length -1; i++){
-    reversedArray.push(words[i].split('').reverse());
-   }
+function reverseStringWords(str){
+    
+    let StrAsArr = str.trim().split(' ');
    
-   for(let i = 0; i < reversedArray.length; i++){
-    for(let j = 0; j < reversedArray[i].length; j++){
-        reversedArray[i].join('');
-    } 
-    reversedStr = reversedArray.join('');
+    for(let i = 0; i < StrAsArr.length; i++){
+    StrAsArr[i] = StrAsArr[i].split('').reverse().join('');
    }
+   return StrAsArr.join(' ');
+}
 
-   console.log(reversedArray);
-   console.log(reversedStr);
+   console.log(reverseStringWords("I like JavaScript"))
+   
+
 
 /*Task-18
 Write a function named as getEvens() which takes 2 number arguments and 

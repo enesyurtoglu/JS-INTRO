@@ -3,7 +3,7 @@ class Person {
     this.fullname = fullname;
     this.age = age;
   }
-  eat(str = 'food') {
+  eat(str = 'food') {// if not provider any str it is going to be food. if provided food will be replaced by  the provide str.
     console.log(`${this.fullname} eats ${str}.`);
   }
   sleep(num = 8) {

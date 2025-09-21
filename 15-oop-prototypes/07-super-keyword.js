@@ -33,4 +33,4 @@ function funcB() {
   console.log('This is function B running...');
 }
 
-funcB();
+funcB();//first executes the funcA ..

@@ -158,10 +158,25 @@ function removeArraySpecialsDigits(arr){
     return newArr2.join('');
 }
 
+/*Task-8
+Write a function named getCommons() which takes two string arrays as arguments and returns all the common words.
+Examples:
+getCommons( ["Javascript", "is", "fun"], ["abc", "xyz", "123"] ) 		-> []
+getCommons( ["Javascript", "is", "fun"], ["Javascript", "C#", "Python"] ) 	-> ["Javascript"]
+getCommons( ["Javascript", "C#", "C#"], ["Python", "C#", "C++"] ) 	-> ["C#"]
+*/
 
-
-
-
+const cArr = [];
+function getCommons(arr1, arr2){
+    for (let i = 0; i < arr1.length; i++){
+        for (let j = 0; i < arr1.length; j++)
+            if (arr1[i] === arr2[j]){
+                cArr.push(arr[i]);
+            }
+    }
+    return cArr;
+}
+console.log(getCommons(["Javascript", "C#", "C#"], ["Python", "C#", "C++"]));
 
 
 

@@ -1,6 +1,6 @@
 class Customer {
   // private property
-  #secretInformation = 'Hello';
+  #secretInformation = 'Hello'; // within a class # makes the property private
 
   // public property
   notSecret = 'Hi';

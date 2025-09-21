@@ -49,7 +49,7 @@ console.log(str.charCodeAt(1)); // 101
 console.log(str.charCodeAt(4)); // 111  
 console.log(str.charCodeAt(5)); // NaN
 
-// slice() and substring() working with negatice indices
+// slice() and substring() working with negative indices
 // slice()     --> YES
 // substrin(). --> NO, it converts to zero
 

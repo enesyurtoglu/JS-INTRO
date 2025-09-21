@@ -358,6 +358,7 @@ isEmailValid("") 			-> false
 isEmailValid("@gmail.com") 		-> false
 isEmailValid("johndoe@yahoo") 		-> false
 isEmailValid("johndoe@gmail.com") 		-> true
+https://www.youtube.com/watch?v=liAasBoD9gQ 
 */
 
 let checkEmail = true; 
@@ -389,6 +390,9 @@ should NOT have any space.
 
 isPasswordValid("Chicago123$") 		-> true
 isPasswordValid("Test1234#") 		-> true
+
+https://www.youtube.com/watch?v=LK5DXTtunpA 
+
 */
 
 function isPasswordValid(str){

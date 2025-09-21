@@ -4,6 +4,7 @@
 // constructor() {} // this is default constructor will always be in your class in case you do not create one
 
 class Animal {
+  //constructor() {} // There is allways a hidden constructor under classes
   eat() {
     console.log('EAT');
   }
@@ -24,13 +25,13 @@ class Dog extends Animal {
   }
 }
 
-class GermanShephard extends Dog {
+class GermanShephard extends Dog { // GermanShephard inherits from Animal as well
   task() {
     console.log('TASK');
   }
 }
 
-const dog1 = new Animal();
+const dog1 = new Animal();// nothing in the parenthesis since no constructor was provided (Hidden constructor)
 dog1.eat();
 dog1.sleep();
 
@@ -38,7 +39,7 @@ const dog2 = new Dog();
 dog2.eat();
 dog2.sleep();
 dog2.protect();
-//dog2.task(); // TypeError: dog2.task is not a function -> Parent class CANNOT access child class methods and properties
+//dog2.task(); // TypeError: dog2.task is not a function -> Parent class CANNOT access child class methods and properties, Dog is parent of GermanShephard
 
 const dog3 = new GermanShephard();
 dog3.eat();

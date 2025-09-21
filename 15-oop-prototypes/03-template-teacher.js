@@ -11,7 +11,7 @@ function Teacher(fname, lname, age, field) {
 // fname teaches field.
 // fname gives homework.
 
-Teacher.prototype.teach = function() {
+Teacher.prototype.teach = function() { // We don't use arrow function when creating prototype
   console.log(`${this.fname} teaches ${this.field}.`);
 }
 
@@ -53,3 +53,4 @@ console.log('Youngest Teacher is:', youngest.fname, youngest.lname);
 
 const fullnames = teachers.map(x => `${x.fname} ${x.lname}`);
 console.log(fullnames);
+

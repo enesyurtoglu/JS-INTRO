@@ -1,5 +1,5 @@
 class Program {
-  // static properties
+  // static properties or instance variables
   static name = 'SDET';
   static batchNo = 11;
 
@@ -8,7 +8,7 @@ class Program {
     console.log('A');
   }
 
-  static funcB() {
+  static funcB() {// This is a static method so it can be accessed via the Class name i.e: Program.funcB --> B
     console.log('B');
   }
 }
@@ -21,4 +21,5 @@ console.log(Number.MAX_SAFE_INTEGER);
 console.log(Math.PI);
 
 const p1 = new Program();
-p1.funcA();
+p1.funcA(); // since fucnA is not static it can still be accessd by any object. i.e: p1
+console.log(p1.name); // returns Undefined since this 'name' belongs to Class but not the object i.e: p1

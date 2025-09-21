@@ -56,7 +56,9 @@ class Phone {
   static anyFunction() {
     console.log('This is a static method!');
   }
-}
+
+}// *** methods are staying inside the Class but outside the constructor ***
+
 
 // Instances or object of the Phone template
 const phone1 = new Phone('iPhone', 'Purple', 1000);

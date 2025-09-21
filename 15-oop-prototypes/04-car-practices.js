@@ -18,10 +18,19 @@ const car3 = new Car('Tesla', 'Y', 2020, 27000);
 
 const cars = [car1, car2, car3 ];
 
-for(const car of cars) {
+cars.forEach(car => {
   console.log(car);
   car.drive();
   car.brakes();
   console.log(`${car.year} ${car.make} ${car.model} is $${car.price}.`);
   console.log(); // provides a new line after each car
-}
+})
+
+
+// for(const car of cars) {
+//   console.log(car);
+//   car.drive();
+//   car.brakes();
+//   console.log(`${car.year} ${car.make} ${car.model} is $${car.price}.`);
+//   console.log(); // provides a new line after each car
+// }
