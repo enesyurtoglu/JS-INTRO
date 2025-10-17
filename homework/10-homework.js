@@ -70,6 +70,7 @@ calculateTotalPrice2({ Apple: 0, Pineapple: 0, Orange: 0 }) 		-> 0
 calculateTotalPrice1({ Apple: 4, Pineapple: 1, Orange: 1, Mango:3 }) 	-> 29.51
 */
 
+
 /*Task-3
 Write a function named nthWord() which takes a string and a number arguments and returns the nth word in the string. 
 Note: Function should return empty string if the number argument is greater than the count of the words in the given string.
@@ -122,7 +123,7 @@ function isArmstrong(num){
 
 console.log(isArmstrong(153));
 
-/*Task-5
+/*Task-5*****
 Write a function named reverseNumber() which takes a number argument and 
 returns it back reversed without converting it to a String.
 Note: Do not convert number to string to complete the task.
@@ -134,7 +135,7 @@ reverseNumber(0) 	-> 0
 reverseNumber(111) 	-> 111
 */
 
-/*Task-6*********
+/*Task-6
 Write a function named doubleOrTriple() which takes an array of numbers as argument and a boolean value.
  It will return the array elements doubled if true or tripled if the boolean value is false.​
 Examples:
@@ -144,25 +145,17 @@ doubleOrTriple([-1, -2], true) 	-> [-2, -4]
 doubleOrTriple([0], false) 	-> [0]
 doubleOrTriple([-1, 0, 1], true) 	-> [-2, 0, 2]
 */
-const resultArr = [];
-function doubleOrTriple(...args, boolean){
-    const arr = args; 
-    resultArr = arr.reduce((topl, curr)) => boolean === true ? topl = curr ** 2 : topl = curr ** 3;  
-    return arr; 
+
+function doubleOrTriple (arr, isDouble){
+    if(isDouble){
+        return arr.map(i => i * 2)
+    }else{
+        return arr.map(i => i * 3)
+    }
 }
-console.log(doubleOrTriple(2,3,4, true))
+console.log(doubleOrTriple([1, 5, 10], true))
 
 
-function sum(...args) {
-  let sum = 0;
-  const arr = args;
-  for (let arg of args) sum += arg;
-  return arr;
-}
-
-let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
-
-console.log(x)
 
 /*Task-7
 Write a function named splitString() which takes a string and a number arguments and returns the string back split by the given number. 

@@ -2,7 +2,7 @@ import { name, hi, obj } from './NavHelper.js';
 import { Batch11Helper } from './Batch11Helper.js';
 import BrowserHelper from './BrowserHelper.js';
 import { close, refresh } from './AutomationHelper.js';
-import open from './AutomationHelper.js'
+import open from './AutomationHelper.js' // default export
 
 hi();
 console.log(name);

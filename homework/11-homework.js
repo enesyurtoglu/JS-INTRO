@@ -1,4 +1,4 @@
-/*Task-1************
+/*Task-1
 Write a function named countPalindrome() which takes a string and returns the number of  palindrome words.
 Note: A palindrome word is a word that reads the same forwards and backwards. Example: level, radar, deed, refer.
 Examples:
@@ -9,23 +9,13 @@ countPalindrome("") 				-> 0
 countPalindrome("No palindrome here") 		-> 0
 */
 
-function isPalindrome(str){
-    for(let i = 0; i < str.length; i++){
-       if(str.split('')[i] === str.split('').reverse()[i]){
-        return true;
-    } 
-    }
-}
-
-let palindromeCounter = 0;
 function countPalindrome(str){
-    const arr = str.split(' ');
-    for (let i = 0; i < arr.length; i++){
-        if (isPalindrome(arr[i]) === true){
-            palindromeCounter++;
-        }
-    }
-    return palindromeCounter;
+    str = str.toLowerCase();
+    return str.split(' ').reduce((count, i) => {
+        let reversedI = i.split('').reverse().join('');
+        if (i && reversedI === i) return count + 1;
+        else return count; 
+    },0)
 }
 
 console.log(countPalindrome("See you at noon"));
